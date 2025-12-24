@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATING FORM</title>
+</head>
+
+<body>
+    <h1 align="center">HOTEL ROOM BOOKING FORM</h1>
+    <form action="#" method="post" align="center">
+        <label for="fullname">FULL NAME</label>
+        <input type="text" id="fullname" name="fullname" required>
+        <br><br>
+        <lable for="email">EMAIL</lable>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <lable for="phone">PHONE</lable>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+        <lable for="checkin">CHECK IN DATE</lable>
+        <input type="date" id="checkin" name="checkin">
+        <br><br>
+        <label for="checkout">CHECK OUT</label>
+        <input type="date" id="checkout" name="checkout">
+        <br><br>
+        <lable for="roomtype">ROOM TYPE</lable>
+        <select id="room" name="room">
+            <option value="single">SINGLE ROOM</option>
+            <option value="double">DOUBLE ROOM</option>
+            <option value="deluxe">DELUXE ROOM</option>
+            <option value="suite">SUITE</option>
+        </select>
+        <br><br>
+        <lable for="guests">NUMBER OF GUESTS:</lable>
+        <input type="number" id="guests" name="guests" min="1" max="10">
+        <br><br>
+        <lable for="request">SPECIAL REQUEST</lable>
+        <textarea id="request" name="request" rows="4" cols="40"></textarea>
+        <br><br>
+        <input type="submit" value="BOOK NOW">
+        <input type="reset" value="RESET FORM">
+
+
+
+
+
+    </form>
+</body>
+
+</html>
