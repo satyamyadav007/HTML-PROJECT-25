@@ -4,3 +4,6 @@ h1{
     text-transform: uppercase;
     text-decoration: underline;
 }
+#box1:hover{
+    background-color: aqua;
+}
