@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT REGISTRATION FORM</title>
+</head>
+
+<body>
+    <h1 align="center">STUDENT REGISTRATION FORM</h1>
+    <form action="submit.html" method="post" align="center">
+        <label for="fullname">ENTER YOUR NAME</label>
+        <input type="text" id="fullname" name="fullname">
+        <br><br>
+        <label for="father'sname">ENTER FATHER'S NAME</label>
+        <input type="text" id="father'sname" name="father'sname">
+        <br><br>
+        <label for="mother'sname">ENTER MOTHER'S NAME</label>
+        <input type="text" id="mother'sname" name="mother'sname">
+        <br><br>
+        <label for="address">ADDRESS</label>
+        <textarea id="address" name="address" rows="5" cols="30"></textarea>
+        <br><br>
+        <label for="phone">PHONE NO.</label>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+        <lable for="email">EMAIL ADD.</lable>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <label for="password">PASSWORD :</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <lable for="gender">GENDER :</lable>
+        <input type="radio" id="gender" name="gender">MALE
+        <input type="radio" id="gender" name="gender">FEMALE
+        <br><br>
+        <label for="query">QUERY DATE</label>
+        <input type="date" id="query" name="query">
+        <br><br>
+        <lable for="course">CHOOSE COURSE</lable>
+        <select id="course" name="course">
+            <option value="BTECH">BTECH</option>
+            <option value="BCOM">BCOM</option>
+            <option value="MCA">MCA</option>
+            <option value="BSC">BSC</option>
+        </select>
+        <br><br>
+        <label for="whom">FOR WHOM YOU ARE REGISTERING</label>
+        <select id="whom" name="whom">
+            <option value="myself">MYSELF</option>
+            <option value="som/daughter">FOR SON/DAUGHTER</option>
+            <option value="friend">FOR A FRIEND</option>
+
+        </select>
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+
+    </form>
+    <hr>
+    <p align="center">&copy; 2025 Student Registration Portal</p>
+</body>
+
+</html>
