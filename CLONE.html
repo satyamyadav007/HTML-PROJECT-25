@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram UI Clone</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Billabong&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background: #fafafa;
+    }
+
+    /* NAVBAR */
+    .navbar{
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      border-bottom: 1px solid #dbdbdb;
+      padding: 10px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-left{
+      font-family: 'Billabong', cursive;
+      font-size: 30px;
+    }
+
+    .navbar input{
+      padding: 5px;
+      width: 200px;
+    }
+
+    .nav-right span{
+      margin-left: 15px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    /* MAIN */
+    .main{
+      display: flex;
+      justify-content: center;
+      margin-top: 80px;
+    }
+
+    /* FEED */
+    .feed{
+      width: 500px;
+    }
+
+    .stories{
+      display: flex;
+      background: #fff;
+      border: 1px solid #dbdbdb;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .story{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #c13584;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    /* POST */
+    .post{
+      background: #fff;
+      border: 1px solid #dbdbdb;
+      margin-bottom: 20px;
+    }
+
+    .post-header{
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .post img{
+      width: 100%;
+    }
+
+    .post-actions{
+      padding: 10px;
+      font-size: 20px;
+    }
+
+    .post-caption{
+      padding: 10px;
+    }
+
+    /* SIDEBAR */
+    .sidebar{
+      width: 300px;
+      margin-left: 30px;
+    }
+
+    .profile{
+      margin-bottom: 20px;
+    }
+
+    .profile p{
+      color: gray;
+    }
+
+    .suggestion{
+      margin-bottom: 10px;
+      font-size: 14px;
+      cursor: pointer;
+      color: #0095f6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="nav-left">Instagram</div>
+    <input type="text" placeholder="Search">
+    <div class="nav-right">
+      <span>🏠</span>
+      <span>❤️</span>
+      <span>👤</span>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- FEED -->
+    <div class="feed">
+
+      <!-- STORIES -->
+      <div class="stories">
+        <div class="story">Story 1</div>
+        <div class="story">Story 2</div>
+        <div class="story">Story 3</div>
+        <div class="story">Story 4</div>
+      </div>
+
+      <!-- POST -->
+      <div class="post">
+        <div class="post-header">username</div>
+        <img src="https://via.placeholder.com/500x400" alt="post">
+        <div class="post-actions">❤️ 💬 ✈️</div>
+        <div class="post-caption">
+          <strong>username</strong> This is a sample caption.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="profile">
+        <strong>your_name</strong>
+        <p>@yourusername</p>
+      </div>
+
+      <div class="suggestion">Suggested User 1</div>
+      <div class="suggestion">Suggested User 2</div>
+      <div class="suggestion">Suggested User 3</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
