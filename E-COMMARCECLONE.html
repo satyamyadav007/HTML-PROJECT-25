@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amazon Clone</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color:white;
+        }
+
+        .navbar {
+            background-color:black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color:orange;
+        }
+
+        .search {
+            display: flex;
+        }
+
+        .search input {
+            padding: 8px;
+            width: 300px;
+            border: none;
+            outline: none;
+        }
+
+        .search button {
+            padding: 8px 15px;
+            background-color: orange;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-links p {
+            display: inline;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .hero {
+            height: 300px;
+            background: url('https://images.unsplash.com/photo-1607082349566-187342175e2f') no-repeat center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            background: white;
+            width: 22%;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .box img {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .box p {
+            color: blue;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+   
+    <div class="navbar">
+        <div class="logo">amazon</div>
+
+        <div class="search">
+            <input type="text" placeholder="Search Amazon">
+            <button>Search</button>
+        </div>
+
+        <div class="nav-links">
+            <p>Hello, Sign in</p>
+            <p>Returns & Orders</p>
+            <p>Cart</p>
+        </div>
+    </div>
+
+    
+    <div class="hero">
+        Welcome to Amazon Clone
+    </div>
+
+
+    <div class="products">
+
+        <div class="box">
+            <h3>Clothes</h3>
+            <img src="https://via.placeholder.com/200">
+            <p>See More</p>
+        </div>
+
+        <div class="box">
+            <h3>Electronics</h3>
+            <img src="https://via.placeholder.com/200">
+            <p>See More</p>
+        </div>
+
+        <div class="box">
+            <h3>Home Decor</h3>
+            <img src="https://via.placeholder.com/200">
+            <p>See More</p>
+        </div>
+
+        <div class="box">
+            <h3>Toys</h3>
+            <img src="https://via.placeholder.com/200">
+            <p>See More</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Amazon Clone | Made by Satyam
+    </div>
+
+</body>
+</html>
