@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Time Table</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        table{
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th{
+            background-color: black;
+            color: white;
+        }
+
+        caption{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .lunch{
+            background-color:blue;
+            font-weight: bold;
+        }
+
+        .nested-table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .nested-table td{
+            border: 1px solid gray;
+            padding: 5px;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h1>ABC Engineering College</h1>
+
+<table>
+    <caption>Class: B.Tech CSE - Semester 1</caption>
+
+    <thead>
+        <tr>
+            <th>Day / Time</th>
+            <th>9:00 - 10:00</th>
+            <th>10:00 - 11:00</th>
+            <th>11:00 - 12:00</th>
+            <th>12:00 - 1:00</th>
+            <th>1:00 - 2:00</th>
+            <th>2:00 - 3:00</th>
+            <th>3:00 - 4:00</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <th>Monday</th>
+            <td>Maths</td>
+            <td>Physics</td>
+            <td>DSA</td>
+            <td rowspan="5" class="lunch">LUNCH BREAK</td>
+            <td colspan="2">DBMS Lab</td>
+            <td>English</td>
+        </tr>
+
+        <tr>
+            <th>Tuesday</th>
+            <td colspan="2">Computer Networks</td>
+            <td>Maths</td>
+            <td>DSA</td>
+            <td>DBMS</td>
+            <td>Sports</td>
+        </tr>
+
+        <tr>
+            <th>Wednesday</th>
+            <td>Physics</td>
+            <td>English</td>
+            <td>Maths</td>
+            <td colspan="3">Mini Project</td>
+        </tr>
+
+        <tr>
+            <th>Thursday</th>
+            <td colspan="3">Web Development Lab</td>
+            <td>DBMS</td>
+            <td>DSA</td>
+            <td>Library</td>
+        </tr>
+
+        <tr>
+            <th>Friday</th>
+            <td>Maths</td>
+            <td>Physics</td>
+            <td>Computer Networks</td>
+
+            
+            <td colspan="3">
+                <table class="nested-table">
+                    <tr>
+                        <td>Placement Training</td>
+                    </tr>
+                    <tr>
+                        <td>Soft Skills</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+    </tbody>
+
+</table>
+
+</body>
+</html>
